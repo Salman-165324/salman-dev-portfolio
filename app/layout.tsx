@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Orbitron } from "next/font/google";
+import  {Montserrat, Orbitron, Outfit } from "next/font/google";
 import "./globals.css";
 import Background from "@/components/Background";
 import styles from "@/components/Background.module.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+
+const normalText = Outfit({
+  variable: "--font-normal-text",
   subsets: ["latin"],
-});
+  weight: ["400", "500", "600", "700"],
+})
 
 const titleFont = Orbitron({
   variable: "--font-title",
@@ -35,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${titleFont.variable} antialiased ${styles.siteBackground}`}
+        className={`${titleFont.variable} ${normalText.variable} antialiased ${styles.siteBackground}`}
       >
         <Background />
         {children}
