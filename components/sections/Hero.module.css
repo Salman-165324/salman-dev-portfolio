@@ -2,7 +2,7 @@
 
 /* Container background - radial gradient not easily expressible in Tailwind */
 .heroBackground {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #07121d 0%, #090a0f 100%);
 }
 
 /* Base star styles - small stars (1px) */
