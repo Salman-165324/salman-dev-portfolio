@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-
+import { AuroraText } from "@/components/ui/aurora-text"
 export default function Hero() {
   return (
     <section
@@ -20,6 +20,7 @@ export default function Hero() {
         <p className="bg-gradient-to-b from-white to-[#6f7d8b] bg-clip-text text-transparent">
           <span className="uppercase">UI-UX & backend capability</span>.
         </p>
+        <AuroraText>Aurora Text</AuroraText>
       </div>
     </section>
   );
