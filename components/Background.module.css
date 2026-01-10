@@ -1,13 +1,15 @@
-/* Hero.module.css - Only complex effects that Tailwind can't handle */
+/* Background.module.css - Site-wide background and starry night effect */
 
 /* Container background - radial gradient not easily expressible in Tailwind */
-.heroBackground {
+.siteBackground {
   background: radial-gradient(ellipse at bottom, #07121d 0%, #090a0f 100%);
 }
 
 /* Base star styles - small stars (1px) */
 .stars {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -64,6 +66,8 @@
     856px 1491px #fff, 1487px 934px #fff, 936px 1149px #fff, 1915px 184px #fff,
     1819px 1097px #fff;
   animation: animStar 50s linear infinite;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .stars::after {
@@ -129,7 +133,9 @@
 
 /* Medium stars (2px) */
 .stars2 {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -153,6 +159,8 @@
     483px 1458px #fff, 970px 921px #fff, 437px 140px #fff, 1719px 232px #fff,
     1301px 35px #fff, 1143px 75px #fff, 1979px 1302px #fff, 329px 748px #fff;
   animation: animStar 100s linear infinite;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .stars2::after {
@@ -185,7 +193,9 @@
 
 /* Large stars (3px) */
 .stars3 {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -204,6 +214,8 @@
     797px 1692px #fff, 1555px 1590px #fff, 498px 1082px #fff, 695px 1995px #fff,
     173px 663px #fff, 603px 1134px #fff, 1423px 1788px #fff;
   animation: animStar 150s linear infinite;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .stars3::after {
