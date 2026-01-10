@@ -11,14 +11,14 @@ export default function Hero() {
       <div id="stars3" className={styles.stars3}></div>
 
       {/* Title section - Tailwind for simpler styling */}
-      <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 text-center text-white font-['Lato',sans-serif] font-light text-5xl md:text-3xl sm:text-2xl tracking-[10px] md:tracking-[5px] sm:tracking-[3px] z-10 pl-2.5 -mt-[60px] md:-mt-10 sm:-mt-[30px]">
-        <span className="bg-gradient-to-b from-white to-[#38495a] bg-clip-text text-transparent">
+      <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 text-center text-white font-['Lato',sans-serif] font-light text-3xl md:text-6xl sm:text-4xl tracking-[10px] md:tracking-[5px] sm:tracking-[3px] z-10 pl-2.5 -mt-[60px] md:-mt-10 sm:-mt-[30px]">
+        <p className="bg-gradient-to-b from-white to-[#38495a] bg-clip-text text-transparent">
           Solving business problems
-        </span>
+        </p>
         <br />
-        <span className="bg-gradient-to-b from-white to-[#38495a] bg-clip-text text-transparent">
+        <p   className="bg-gradient-to-b from-white to-[#38495a] bg-clip-text text-transparent">
           code, design, and product thinking.
-        </span>
+        </p>
       </div>
     </section>
   );
